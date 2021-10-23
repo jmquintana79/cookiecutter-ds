@@ -1,26 +1,26 @@
 name:
-	{{cookiecutter.repo_name}}
+{{cookiecutter.repo_name}}
 channels:
-	- base
-	- conda-forge
-	- anaconda
+- base
+- conda-forge
+- anaconda
 {%- if cookiecutter.workflow_automation == "Snakemake" %}
-	- bioconda
+- bioconda
 {%- endif %}
 dependencies:
-	# project tools
-	- python-dotenv # to collect environment variables
-	# basic ds tools
-	- matplotlib
-	- pandas
-	- scipy
-	- scikit-learn
-	- seaborn
-	- statsmodels
-	- xgboost
+# project tools
+- python-dotenv # to collect environment variables
+# basic ds tools
+- matplotlib
+- pandas
+- scipy
+- scikit-learn
+- seaborn
+- statsmodels
+- xgboost
 {%- if cookiecutter.notebooks == "Yes" %}
-	- jupyter
+- jupyter
 {% endif -%}
 {%- if cookiecutter.workflow_automation == "Snakemake" %}
-	- snakemake
+- snakemake
 {%- endif %}
