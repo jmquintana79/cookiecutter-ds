@@ -1,5 +1,4 @@
-name:
-{{cookiecutter.repo_name}}
+name: {{cookiecutter.repo_name}}
 channels:
 - base
 - conda-forge
