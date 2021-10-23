@@ -1,4 +1,4 @@
-# Cookiecutter Flexible ML
+# Cookiecutter template for DS
 
 ![Python version](https://img.shields.io/badge/Python-3.x-informational)
 ![Issues closed](https://img.shields.io/github/issues-closed/jmquintana79/cookiecutter-ds)
