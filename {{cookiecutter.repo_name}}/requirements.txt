@@ -1,3 +1,13 @@
+# project tools
+python-dotenv # to collect environment variables
+# basic ds tools
+matplotlib
+pandas
+scipy
+scikit-learn
+seaborn
+statsmodels
+xgboost
 {%- if cookiecutter.notebooks == "Yes" %}
 jupyter
 {%- endif %}
