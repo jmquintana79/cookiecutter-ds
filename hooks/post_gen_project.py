@@ -20,11 +20,11 @@ if workflow_automation == "Python":
     os.remove("Makefile")
     os.remove("Snakefile")
 elif workflow_automation == "Make":
-    os.remove("run.py")
+    os.remove("runs")
     os.remove("Snakefile")
 elif workflow_automation == "Snakemake":
     os.remove("Makefile")
-    os.remove("run.py")
+    os.remove("runs")
 
 if project_report == "No":
     shutil.rmtree("reports")
@@ -34,6 +34,6 @@ if notebooks == "No":
 
 if src_structure == "Less":
     shutil.rmtree('src/data')
-    shutil.rmtree('src/features')
+    #shutil.rmtree('src/features')
     shutil.rmtree('src/models')
     shutil.rmtree('src/visualization')
