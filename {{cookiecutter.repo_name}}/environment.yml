@@ -3,9 +3,7 @@ channels:
 - base
 - conda-forge
 - anaconda
-{%- if cookiecutter.workflow_automation == "Snakemake" %}
-- bioconda
-{%- endif %}
+
 dependencies:
 # project tools
 - python-dotenv # to collect environment variables
@@ -20,6 +18,6 @@ dependencies:
 {%- if cookiecutter.notebooks == "Yes" %}
 - jupyter
 {% endif -%}
-{%- if cookiecutter.workflow_automation == "Snakemake" %}
-- snakemake
+{%- if cookiecutter.workflow_automation == "Invoke" %}
+- invoke
 {%- endif %}

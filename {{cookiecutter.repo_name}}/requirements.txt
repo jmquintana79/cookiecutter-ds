@@ -11,6 +11,6 @@ xgboost
 {%- if cookiecutter.notebooks == "Yes" %}
 jupyter
 {%- endif %}
-{%- if cookiecutter.workflow_automation == "Snakemake" %}
-snakemake
+{%- if cookiecutter.workflow_automation == "Invoke" %}
+invoke
 {%- endif %}
