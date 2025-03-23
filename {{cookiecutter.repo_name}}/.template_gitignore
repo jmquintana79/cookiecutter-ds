@@ -1,7 +1,8 @@
 # Custom
-#venv/
-#data/
-#.env
+data/
+
+# mac-os
+*.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -107,10 +108,10 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-#.env
+.env
 .venv
 env/
-#venv/
+venv/
 ENV/
 env.bak/
 venv.bak/
