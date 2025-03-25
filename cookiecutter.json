@@ -1,13 +1,27 @@
 {
-    "project_name" : "{{cookiecutter.name.lower().replace(' ', '-')}}",
-    "repo_name" :  "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-    "author_name" : "Your name (or your organization/company/team)",
-    "description" : "A short description of the project.",
+    "user": "jmquintana79",
+    "name": "Project name",
+    "repo_name": "{{cookiecutter.name.lower().replace(' ', '-')}}",
+    "package_name" :  "{{cookiecutter.repo_name.replace('-', '_')}}",
+    "author_name": "Your name (or your organization/company/team)",
+    "description": "A short description of the project.",
+    "version": "0.1.0",
+    "python_version": "3.12",
     "license": ["MIT License", "BSD License", "ISC License", "GNU General Public License v3", "Apache Software License 2.0", "Not open source"],
-    "package_manager": ["pip", "poetry", "pipenv", "conda"],
-    "workflow_automation": ["Python", "Make", "Invoke"],
-    "notebooks": ["No", "Yes"],
-    "project_report": ["No", "Yes"],
     "src_structure": ["Less", "More"],
-    "setup_project": ["Yes - select this", "No - for testing purposes only"]
+    "setup_project": ["Yes - select this", "No - for testing purposes only"],
+    "__prompts__": {
+        "user": "GitHub User",
+        "name": "Project Name",
+        "repo_name": "GitHub Repository",
+        "package_name": "Python Package Name (in src)",
+        "author_name": "Juan Quintana",
+        "description": "Project Description",
+        "version": "Project Version",
+        "python_version": "Python Version",
+        "license": "Project License",
+        "src_structure": "Package Structure (in src)",
+        "setup_project": "Setup Project and Libraries Instalation"
+
+    }
 }
