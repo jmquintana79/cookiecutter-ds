@@ -4,5 +4,5 @@ run:
   echo: true
 project:
   name: {{cookiecutter.name}}
-  package: {{cookiecutter.package}}
+  package: {{cookiecutter.package_name}}
   repository: {{cookiecutter.repository}}
