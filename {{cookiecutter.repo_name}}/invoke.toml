@@ -5,4 +5,4 @@ run:
 project:
   name: {{cookiecutter.name}}
   package: {{cookiecutter.package_name}}
-  repository: {{cookiecutter.repository}}
+  repository: {{cookiecutter.repo_name}}
