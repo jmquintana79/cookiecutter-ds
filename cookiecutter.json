@@ -8,7 +8,7 @@
     "version": "0.1.0",
     "python_version": "3.12",
     "license": ["MIT License", "BSD License", "ISC License", "GNU General Public License v3", "Apache Software License 2.0", "Not open source"],
-    "src_structure": ["Less", "More"],
+    "src_structure": ["More", "Less"],
     "data_libraries": ["Yes", "No"],
     "setup_project": ["Yes", "No"],
     "__prompts__": {
@@ -21,7 +21,7 @@
         "version": "Project Version",
         "python_version": "Python Version",
         "license": "Project License",
-        "src_structure": "Package Structure (in src)",
+        "src_structure": "Package Structure Content",
         "data_libraries": "Install Libraries for Data Manipulation",
         "setup_project": "Setup Project and VirtualEnv Creation"
 

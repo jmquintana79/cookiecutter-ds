@@ -3,11 +3,11 @@
 # PROJECT
 
 [tool.poetry]
-name = "{{cookiecutter.repository}}"
+name = "{{cookiecutter.repo_name}}"
 version = "{{cookiecutter.version}}"
 description = "{{cookiecutter.description}}"
-repository = "https://github.com/{{cookiecutter.user}}/{{cookiecutter.repository}}"
-documentation = "https://{{cookiecutter.user}}.github.io/{{cookiecutter.repository}}/"
+repository = "https://github.com/{{cookiecutter.user}}/{{cookiecutter.repo_name}}"
+documentation = "https://{{cookiecutter.user}}.github.io/{{cookiecutter.repo_name}}/"
 authors = ["{{cookiecutter.user}}"]
 readme = "README.md"
 license = "{{cookiecutter.license}}"
@@ -16,7 +16,7 @@ packages = [{ include = "{{cookiecutter.package_name}}", from = "src" }]
 # SCRIPTS
 
 [tool.poetry.scripts]
-{{cookiecutter.repository}} = "{{cookiecutter.package_name}}.scripts:main"
+{{cookiecutter.repo_name}} = "{{cookiecutter.package_name}}.scripts:main"
 
 # DEPENDENCIES
 
