@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Author: Juan Quintana
-# @Date:   2025-03-25 16:28:43
-# @Last Modified by:   Juan Quintana
-# @Last Modified time: 2025-03-25 16:50:47
 import os
 import shutil
 
@@ -17,18 +12,14 @@ setup_project = "{{ cookiecutter.setup_project }}"
 if os_license == "Not open source":
     os.remove("LICENSE")
 
-
-if project_report == "No":
-    shutil.rmtree("reports")
-
-if notebooks == "No":
-    shutil.rmtree("notebooks")
-
+"""
 if src_structure == "Less":
     shutil.rmtree('src/data')
     shutil.rmtree('src/features')
     shutil.rmtree('src/models')
     shutil.rmtree('src/visualization')
+    shutil.rmtree("reports")
+"""
 
 """
 if setup_project == "Yes - select this":
