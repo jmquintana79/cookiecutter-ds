@@ -2,10 +2,6 @@ import os
 import shutil
 
 os_license = '{{ cookiecutter.license }}'
-package_manager = '{{ cookiecutter.package_manager }}'
-workflow_automation = '{{ cookiecutter.workflow_automation }}'
-project_report = '{{ cookiecutter.project_report }}'
-notebooks = '{{ cookiecutter.notebooks }}'
 src_structure = '{{ cookiecutter.src_structure }}'
 setup_project = "{{ cookiecutter.setup_project }}"
 
