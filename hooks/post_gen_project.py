@@ -1,21 +1,27 @@
 import os
 import shutil
 
+package_name = '{{ cookiecutter.package_name }}'
 os_license = '{{ cookiecutter.license }}'
 src_structure = '{{ cookiecutter.src_structure }}'
+project_type = '{{ cookiecutter.project_type }}'
 setup_project = "{{ cookiecutter.setup_project }}"
 
 if os_license == "Not open source":
     os.remove("LICENSE")
 
-"""
-if src_structure == "Less":
-    shutil.rmtree('src/data')
-    shutil.rmtree('src/features')
-    shutil.rmtree('src/models')
-    shutil.rmtree('src/visualization')
-    shutil.rmtree("reports")
-"""
+if project_type == "DS":
+    shutil.rmtree("tests")
+    shutil.rmtree("logs")
+    shutil.rmtree("data/features")
+    # tasks ????
+
+if src_structure == "Clean":
+    shutil.rmtree(f'src/{package_name}/data')
+    shutil.rmtree(f'src/{package_name}/pipelines')
+    shutil.rmtree(f'src/{package_name}/models')
+    shutil.rmtree(f'src/{package_name}/visualization')
+
 
 """
 if setup_project == "Yes - select this":
