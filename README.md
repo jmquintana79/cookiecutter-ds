@@ -60,7 +60,63 @@ Some of these might not be created depending on options picked
     ├── models               <- Scripts used to generate models and inference results.
     └── visualization        <- Scripts to generate graphics.
         └── visualize.py
-```    
+```  
+
+```
+├── LICENSE
+├── README.md
+├── confs
+│   ├── columns.py
+│   ├── io.py
+│   └── operation.py
+├── data
+│   ├── external
+│   ├── features
+│   ├── interim
+│   ├── processed
+│   └── raw
+├── docs
+│   ├── code_versions
+│   ├── data
+│   │   ├── data_availability
+│   │   ├── data_inventory
+│   │   ├── data_knowledge
+│   │   └── metadata
+│   ├── design
+│   │   ├── canvas
+│   │   ├── data_modeling
+│   │   ├── development
+│   │   ├── evaluation
+│   │   ├── operation
+│   │   └── workflows
+│   ├── experiments
+│   ├── references
+│   │   ├── papers
+│   │   └── web_references.md
+│   └── web_references.md
+├── invoke.toml
+├── notebooks
+├── output
+│   ├── models
+│   ├── reports
+│   │   └── figures
+│   └── visualizations
+├── pipelines
+├── poetry.toml
+├── pyproject.toml
+├── requirements
+├── src
+│   └── {{cookiecutter.package_name}}
+│       ├── __init__.py
+│       ├── data
+│       ├── models
+│       ├── pipelines
+│       ├── settings.py
+│       └── visualization
+├── tasks
+│   └── checks.py
+└── {{cookiecutter.repo_name}}.code-workspace
+```
 
 ## Motivation
 
