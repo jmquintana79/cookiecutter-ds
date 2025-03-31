@@ -1,6 +1,10 @@
 # {{ cookiecutter.name }}
 
+{% if cookiecutter.user == "" -%}
+*{{ cookiecutter.author_name }}, {% now 'local', '%d/%m/%Y' %}*
+{%- else -%}
 *{{ cookiecutter.user }}, {% now 'local', '%d/%m/%Y' %}*
+{%- endif %}
 
 {{ cookiecutter.description }}
 

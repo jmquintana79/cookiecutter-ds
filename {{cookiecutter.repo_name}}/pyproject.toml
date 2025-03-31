@@ -6,14 +6,14 @@
 name = "{{cookiecutter.repo_name}}"
 version = "{{cookiecutter.version}}"
 description = "{{cookiecutter.description}}"
-{% cookiecutter.user == "" -%}
+{% if cookiecutter.user == "" -%}
 repository = "{{cookiecutter.repo_name}}"
 documentation = "{{cookiecutter.repo_name}}/docs/"
 {%- else -%}
 repository = "https://github.com/{{cookiecutter.user}}/{{cookiecutter.repo_name}}"
 documentation = "https://{{cookiecutter.user}}.github.io/{{cookiecutter.repo_name}}/"
 {%- endif %}
-authors = ["{{cookiecutter.user}}"]
+authors = ["{{cookiecutter.author_name}}"]
 readme = "README.md"
 license = "{{cookiecutter.license}}"
 packages = [{ include = "{{cookiecutter.package_name}}", from = "src" }]
