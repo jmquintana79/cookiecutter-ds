@@ -1,5 +1,5 @@
 {
-    "user": "jmquintana79",
+    "user": "",
     "name": "Project name",
     "repo_name": "{{cookiecutter.name.lower().replace(' ', '-')}}",
     "package_name" :  "{{cookiecutter.repo_name.replace('-', '_')}}",
@@ -13,7 +13,7 @@
     "data_libraries": ["Yes", "No"],
     "setup_project": ["Yes", "No"],
     "__prompts__": {
-        "user": "GitHub User",
+        "user": "GitHub User (in case you want to use it)",
         "name": "Project Name",
         "repo_name": "GitHub Repository",
         "package_name": "Python Package Name (src)",
