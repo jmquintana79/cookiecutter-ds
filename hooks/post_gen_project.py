@@ -22,6 +22,7 @@ if src_structure == "Clean":
     shutil.rmtree(f'src/{package_name}/models')
     shutil.rmtree(f'src/{package_name}/visualization')
 
-if setup_project == "Yes - select this":
+if setup_project == "Yes":
     os.system("git init")
+    os.rename(".template_gitignore", ".gitignore")
     os.system("poetry install --with dev,tests")
