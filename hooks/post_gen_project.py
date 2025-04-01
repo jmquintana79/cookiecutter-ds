@@ -26,6 +26,5 @@ if src_structure == "Clean":
 if setup_project == "Yes":
     os.system("git init")
     os.rename(".template_gitignore", ".gitignore")
-    print(f"poetry env use python{python_version}")
-    #os.system(f"poetry env use python{python_version}")
+    os.system(f"poetry env use python{python_version}")
     #os.system("poetry install --with dev,tests")
