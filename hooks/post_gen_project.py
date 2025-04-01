@@ -22,13 +22,6 @@ if src_structure == "Clean":
     shutil.rmtree(f'src/{package_name}/models')
     shutil.rmtree(f'src/{package_name}/visualization')
 
-
-"""
 if setup_project == "Yes - select this":
     os.system("git init")
-    os.system("pipenv install --dev")
-    os.system(
-        "pipenv run ipython kernel install --name "
-        '"py3_{{ cookiecutter.repo_name }}" --user'
-    )
-"""
+    os.system("poetry install --with dev,tests")
