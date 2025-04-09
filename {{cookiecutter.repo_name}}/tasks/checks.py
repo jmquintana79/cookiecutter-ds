@@ -27,6 +27,13 @@ def type(ctx: Context) -> None:
 
 
 @task
+def interrogate(ctx: Context) -> None:
+    """ Check docstrings availability"""
+    ctx.run("interrogate tasks/")
+    ctx.run("interrogate src/")
+    
+
+@task
 def code(ctx: Context) -> None:
     """Check the codes with ruff."""
     ctx.run("poetry run ruff check src/ tasks/ tests/")
