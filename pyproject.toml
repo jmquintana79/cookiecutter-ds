@@ -19,6 +19,7 @@ python =  ">=3.09,<3.10"
 setuptools = "^71.1.0"
 python-dotenv = "*"
 invoke = "^2.2.0"
+cookiecutter = "^2.6.0"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.10.1"
