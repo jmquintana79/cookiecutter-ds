@@ -1,3 +1,13 @@
+## v2.2.0 (2025-07-17)
+
+### Feat
+
+- **src.confs**: added python interesting config files to be used in src
+
+### Refactor
+
+- **tasks.devops**: removed auto generated header
+
 ## v2.1.0 (2025-07-17)
 
 ### Feat
