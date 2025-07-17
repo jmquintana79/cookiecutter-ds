@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Author: Juan Quintana
-# @Date:   2025-03-31 15:26:12
-# @Last Modified by:   Juan Quintana
-# @Last Modified time: 2025-07-17 12:26:15
 
 """DevOps tasks for pyinvoke."""
 
