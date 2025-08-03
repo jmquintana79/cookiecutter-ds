@@ -1,3 +1,9 @@
+## v2.3.0 (2025-08-03)
+
+### Feat
+
+- **src.schemas**: added new module schemas for containg pandera schemas for datasets and tables
+
 ## v2.2.0 (2025-07-17)
 
 ### Feat
