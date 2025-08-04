@@ -1,3 +1,9 @@
+## v2.3.1 (2025-08-04)
+
+### Fix
+
+- **src.configs**: renamed to solve mistake
+
 ## v2.3.0 (2025-08-03)
 
 ### Feat
