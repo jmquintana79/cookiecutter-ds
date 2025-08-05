@@ -1,3 +1,9 @@
+## v2.4.0 (2025-08-05)
+
+### Feat
+
+- **docs**: new structure of docs
+
 ## v2.3.1 (2025-08-04)
 
 ### Fix
