@@ -29,7 +29,7 @@ packages = [{ include = "{{cookiecutter.package_name}}", from = "src" }]
 python = "^{{cookiecutter.python_version}}"
 setuptools = "^71.1.0"
 python-dotenv = "*"
-{%- if cookiecutter.data_libraries == "Yes" %}
+{%- if cookiecutter.project_type != "library" %}
 numpy = "*"
 scipy = "*"
 pandas = "*"
