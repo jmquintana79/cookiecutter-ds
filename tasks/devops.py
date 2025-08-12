@@ -21,7 +21,7 @@ def formats(ctx: Context) -> None:
     # format imports
     ctx.run("poetry run ruff check --select I --fix")
     # format sources
-    ctx.run("poetry run ruff format src/perseo/ tasks/")
+    ctx.run("poetry run ruff format {{cookiecutter.repo_name}}/ tasks/ hooks/")
     # clean
     ctx.run("ruff clean")
 
@@ -37,7 +37,7 @@ def check_poetry(ctx: Context) -> None:
 def check_format(ctx: Context) -> None:
     """Check format"""
     # check format with ruff
-    ctx.run("ruff format --check src/perseo/ tasks/", echo=True)
+    ctx.run("ruff format --check {{cookiecutter.repo_name}}/ tasks/ hooks/", echo=True)
     # clean
     ctx.run("ruff clean")
 
@@ -46,7 +46,7 @@ def check_format(ctx: Context) -> None:
 def check_code(ctx: Context) -> None:
     """Check code"""
     # check code with ruff
-    ctx.run("ruff check src/perseo/ tasks/", echo=True)
+    ctx.run("ruff check {{cookiecutter.repo_name}}/ tasks/ hooks/", echo=True)
     # clean
     ctx.run("ruff clean")
 
@@ -55,14 +55,15 @@ def check_code(ctx: Context) -> None:
 def check_docs(ctx: Context) -> None:
     """Check docstrings"""
     # check docstring
+    ctx.run("interrogate {{cookiecutter.repo_name}}/", echo=True)
     ctx.run("interrogate tasks/", echo=True)
-    ctx.run("interrogate src/perseo/", echo=True)
+    ctx.run("interrogate hooks/", echo=True)
 
 
 @task
 def docs(ctx: Context) -> None:
     """Create atomated documentation"""
-    ctx.run("pdoc --html --output-dir docs --force src/perseo/")
+    ctx.run("pdoc -o docs/API tasks/ hooks/")
 
 
 @task
@@ -120,7 +121,7 @@ def clean(c: Context, path: str = ".") -> None:
 
 # %% ALL TASKS
 
-@task(pre=[check_code, formats, check_format, docs, clean], default=True)
+@task(pre=[docs, clean], default=True)
 def all(_: Context) -> None:
     """Launch all necessary tasks"""
 
