@@ -40,6 +40,8 @@ vaex = "*"
 matplotlib = "*"
 seaborn = "*"
 pandera = "*"
+prefect = ">=2.0,<3.0"
+feature-engine = "*"
 {%- endif %}
 invoke = "^2.2.0"
 
