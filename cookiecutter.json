@@ -10,21 +10,19 @@
     "license": ["MIT License", "BSD License", "ISC License", "GNU General Public License v3", "Apache Software License 2.0", "Not open source"],
     "project_type": ["ML", "DS", "library"],
     "src_structure": ["More", "Clean"],
-    "data_libraries": ["Yes", "No"],
     "setup_project": ["Yes", "No"],
     "__prompts__": {
         "user": "GitHub User (in case you want to use it)",
         "name": "Project Name",
-        "repo_name": "GitHub Repository",
+        "repo_name": "GitHub Repository Name",
         "package_name": "Python Package Name (src)",
         "author_name": "Author Name",
         "description": "Project Description",
         "version": "Project Version",
-        "python_version": "Python Version",
+        "python_version": "Python Version (>=3.9)",
         "license": "Project License",
         "project_type": "Project Type",
         "src_structure": "Package Structure Content (src)",
-        "data_libraries": "Install Libraries for Data Manipulation",
         "setup_project": "Setup Project and VirtualEnv Creation"
 
     }

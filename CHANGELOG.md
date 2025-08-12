@@ -1,3 +1,17 @@
+## v2.5.0 (2025-08-12)
+
+### Feat
+
+- **tests**: added unit testing system to validate the repo creation with cookiecutter allowing to select different options
+- **cookiecutter.json**: removed option data libraries to install or not python libraries for data usage
+- **src.pipelines**: definitive list of pipelines to be used in a ml project
+- **data**: new data structure
+
+### Fix
+
+- **tasks**: modified invoke tasks init file to allow append more than one submodule
+- **tasks**: added an __init__ file add submodules of tasks as collections
+
 ## v2.4.0 (2025-08-05)
 
 ### Feat
