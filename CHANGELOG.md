@@ -1,3 +1,9 @@
+## v2.5.2 (2025-08-18)
+
+### Fix
+
+- **docs.API**: i forgot the .gitkeep file to avoid be omited
+
 ## v2.5.1 (2025-08-18)
 
 ### Fix
