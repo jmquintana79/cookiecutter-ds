@@ -10,5 +10,5 @@ from . import test
 
 # add submodule as a collection
 ns = Collection()
-ns.add_collection(Collection(devops), name="devops")
-ns.add_collection(Collection(test), name="test")
+ns.add_collection(devops)
+ns.add_collection(test)
