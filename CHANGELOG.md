@@ -1,3 +1,9 @@
+## v2.5.1 (2025-08-18)
+
+### Fix
+
+- **tasks**: updated init files from invoke tasks folders to avoid duplicated submodule names
+
 ## v2.5.0 (2025-08-12)
 
 ### Feat
