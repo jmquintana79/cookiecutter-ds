@@ -1,3 +1,21 @@
+## v2.6.0 (2025-08-21)
+
+### Feat
+
+- **notebooks-and-src**: added init files to all modules and submodules inside src, and new structure for pipelines and notebook
+
+## v2.5.2 (2025-08-18)
+
+### Fix
+
+- **docs.API**: i forgot the .gitkeep file to avoid be omited
+
+## v2.5.1 (2025-08-18)
+
+### Fix
+
+- **tasks**: updated init files from invoke tasks folders to avoid duplicated submodule names
+
 ## v2.5.0 (2025-08-12)
 
 ### Feat
