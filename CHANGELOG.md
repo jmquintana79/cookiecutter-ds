@@ -1,3 +1,9 @@
+## v2.6.0 (2025-08-21)
+
+### Feat
+
+- **notebooks-and-src**: added init files to all modules and submodules inside src, and new structure for pipelines and notebook
+
 ## v2.5.2 (2025-08-18)
 
 ### Fix
