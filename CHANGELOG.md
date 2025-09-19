@@ -1,3 +1,9 @@
+## v2.6.1 (2025-09-19)
+
+### Fix
+
+- **pipeline.operationalizing**: renamed a bad filename
+
 ## v2.6.0 (2025-08-21)
 
 ### Feat
