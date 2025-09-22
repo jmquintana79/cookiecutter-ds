@@ -1,3 +1,15 @@
+## v2.6.2 (2025-09-22)
+
+### Fix
+
+- **data-&-outputs**: it was unified data and outputs folder in new structure
+
+## v2.6.1 (2025-09-19)
+
+### Fix
+
+- **pipeline.operationalizing**: renamed a bad filename
+
 ## v2.6.0 (2025-08-21)
 
 ### Feat
