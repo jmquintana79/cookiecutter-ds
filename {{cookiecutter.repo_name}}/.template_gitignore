@@ -1,6 +1,5 @@
 # Custom
 data/
-outputs/
 
 # mac-os
 *.DS_Store

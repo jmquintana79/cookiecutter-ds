@@ -8,5 +8,3 @@ to define them individualy.
 
 FOLDER_PROJECT = r""
 FOLDER_DATA = r""
-FOLDER_OUTPUTS = r""
-FOLDER_LOGS = r""
