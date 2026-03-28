@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+# @Author: Juan Quintana
+# @Date:   2025-06-28 16:04:05
+# @Last Modified by:   Juan Quintana
+# @Last Modified time: 2026-03-28 20:04:56
+
 import os
 import shutil
 
@@ -19,11 +25,14 @@ if os_license == "Not open source":
 if project_type == "ML":
     pass
 elif project_type == "DS":
-    shutil.rmtree("tests")
-    shutil.rmtree("logs")
-    shutil.rmtree("data/features")
+    shutil.rmtree("data/artifacts")
+    shutil.rmtree("data/development")
+    shutil.rmtree("data/logs")
+    shutil.rmtree("data/maintenance")
+    shutil.rmtree("data/metadata")
+    shutil.rmtree("data/historical/features")
+    shutil.rmtree("data/operative/features")
 elif project_type == "library":
-    shutil.rmtree("data")
     src_structure = "Clean"
 else:
     pass
@@ -32,12 +41,17 @@ else:
 
 if src_structure == "Clean":
     shutil.rmtree("notebooks")
-    shutil.rmtree("logs")
-    shutil.rmtree("tests")
-    shutil.rmtree("outputs")
+    shutil.rmtree("data")
+    shutil.rmtree("docs/how_to_launch")
+    shutil.rmtree("docs/project_information")
+    shutil.rmtree("docs/references")
+    shutil.rmtree("docs/wiki")
+    shutil.rmtree(f'src/{package_name}/configs')
     shutil.rmtree(f'src/{package_name}/data')
+    shutil.rmtree(f'src/{package_name}/io')
     shutil.rmtree(f'src/{package_name}/pipelines')
     shutil.rmtree(f'src/{package_name}/models')
+    shutil.rmtree(f'src/{package_name}/schemas')
     shutil.rmtree(f'src/{package_name}/visualization')
 
 """ setup project execution """
