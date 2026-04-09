@@ -2,6 +2,7 @@
 
 from dotenv import dotenv_values
 import os
+from pathlib import Path
 
 ## get project config values
 def get(verbose:bool = False)->dict:
@@ -11,7 +12,7 @@ def get(verbose:bool = False)->dict:
     return -- dictionary with keys and their respective values.
     """
     # get project path
-    project_dir = os.path.join(os.path.dirname(__file__), os.pardir)
+    project_dir = Path(__file__).resolve().parents[2]
     # get .env path
     dotenv_path = os.path.join(project_dir, '.env')
     # display

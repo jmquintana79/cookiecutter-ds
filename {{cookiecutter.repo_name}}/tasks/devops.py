@@ -113,9 +113,15 @@ def clean(c: Context, path: str = ".") -> None:
     c.run("ruff clean")
 
 
+@task
+def testing(ctx: Context) -> None:
+    """Launch pytesting"""
+    ctx.run("pytest")
+
+
 # %% ALL TASKS
 
-@task(pre=[check_code, formats, check_format, docs, clean], default=True)
+@task(pre=[check_code, formats, check_format, docs, clean, testing], default=True)
 def all(_: Context) -> None:
     """Launch all necessary tasks"""
 
