@@ -6,5 +6,8 @@ However it is not true always. For this reason I give the possibility
 to define them individualy.
 """
 
-FOLDER_PROJECT = r""
+import os
+from pathlib import Path
+ 
+FOLDER_PROJECT = Path(__file__).resolve().parents[3]
 FOLDER_DATA = r""
