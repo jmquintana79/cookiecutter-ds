@@ -1,3 +1,10 @@
+## v2.7.1 (2026-04-09)
+
+### Refactor
+
+- **tasks.devops**: added pytesting launcher using invoke
+- **configs.env**: added automatic folder project setting
+
 ## v2.7.0 (2026-03-28)
 
 ### Feat

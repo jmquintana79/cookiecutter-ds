@@ -121,7 +121,7 @@ def testing(ctx: Context) -> None:
 
 # %% ALL TASKS
 
-@task(pre=[check_code, formats, check_format, docs, clean], default=True)
+@task(pre=[check_code, formats, check_format, docs, clean, testing], default=True)
 def all(_: Context) -> None:
     """Launch all necessary tasks"""
 
