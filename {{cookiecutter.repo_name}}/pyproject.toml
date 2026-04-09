@@ -6,10 +6,7 @@
 name = "{{cookiecutter.repo_name}}"
 version = "{{cookiecutter.version}}"
 description = "{{cookiecutter.description}}"
-{% if cookiecutter.user == "" -%}
-repository = "{{cookiecutter.repo_name}}"
-documentation = "{{cookiecutter.repo_name}}/docs/"
-{%- else -%}
+{% if cookiecutter.user != "" -%}
 repository = "https://github.com/{{cookiecutter.user}}/{{cookiecutter.repo_name}}"
 documentation = "https://{{cookiecutter.user}}.github.io/{{cookiecutter.repo_name}}/"
 {%- endif %}
@@ -36,7 +33,6 @@ pandas = "*"
 scikit-learn = "*"
 statsmodels = "*"
 pyarrow = "*"
-vaex = "*"
 matplotlib = "*"
 seaborn = "*"
 pandera = "*"

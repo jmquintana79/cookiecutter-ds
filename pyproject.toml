@@ -4,7 +4,7 @@
 
 [tool.poetry]
 name = "cookiecutter-ds"
-version = "2.6.2"
+version = "2.7.0"
 description = "Cookiecutter template for DS, ML, or Python library development."
 repository = "https://github.com/jmquintana79/cookiecutter-ds"
 documentation = "https://github.com/jmquintana79/cookiecutter-ds/"
@@ -50,10 +50,6 @@ python_version = "3.09"
 check_untyped_defs = true
 ignore_missing_imports = true
 
-[tool.pytest.ini_options]
-addopts = "--verbosity=2"
-pythonpath = ["src"]
-
 [tool.ruff]
 fix = true
 indent-width = 4
@@ -68,6 +64,9 @@ convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*.py" = ["D100", "D103"]
+
+[tool.pytest.ini_options]
+pythonpath = ["tests"]
 
 # SYSTEMS
 

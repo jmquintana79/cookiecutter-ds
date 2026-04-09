@@ -1,3 +1,13 @@
+## v2.7.0 (2026-03-28)
+
+### Feat
+
+- **hooks.post_gen_project**: solved pending issues in diferent options, specially deleting folders
+
+### Refactor
+
+- **tests**: updated tests to the new hook
+
 ## v2.6.2 (2025-09-22)
 
 ### Fix
