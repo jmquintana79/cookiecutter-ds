@@ -1,3 +1,9 @@
+## v2.7.2 (2026-04-16)
+
+### Fix
+
+- **env**: fixed an issue with the way to collect automatically the folder project
+
 ## v2.7.1 (2026-04-09)
 
 ### Refactor
