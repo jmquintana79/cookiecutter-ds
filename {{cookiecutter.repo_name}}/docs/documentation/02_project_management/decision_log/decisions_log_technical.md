@@ -1,0 +1,1 @@
+# rationale and owner. Technical decisions → ADRs
